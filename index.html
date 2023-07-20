@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <title>Weather</title>  
+</head>
+<body>
+  <header>
+    <div class="title box-shadow">
+      <h1 class="bold">Local Weather</h1>
+    </div>
+  </header>
+  <main>
+    <section class="standard-padding box-shadow" id="weather-container">
+      <h1 hidden>placeholder</h1>
+      <div class="standard-border" id="weather-current">
+        <h1 class="bold">Weather</h1>
+        <figure>
+          <img src="#" alt="placeholder" id="weather-icon">
+          <figcaption></figcaption>
+        </figure>
+        <h2><span id="current-temp"></span>&deg;F</h2>
+        <h2>Wind: <span id="wind-speed"></span> Mph <span id="wind-direction"></span></h2>
+        <h2>Wind Chill: <span id="wind-chill"></span>&deg;F</h2>
+        <h2>Barometric Pressure: <span id="pressure"></span> inHg</h2>
+        <h2>Humidity: <span id="humidity"></span>%</h2>
+        <h5><em>Weather data provided by the OpenWeather API</em></h5>
+      </div>
+    </section>
+    <section class="standard-border standard-padding box-shadow">         
+      <div id="weather-3day">
+        <h1 class="bold">3-Day Weather Forecast</h1>
+        <!-- content inserted by javascript -->
+      </div>
+    </section>
+  </main>
+  <footer class=" box-shadow">
+      <div>&copy;<span id="year"></span> .:|:. David Ward .:|:. Oregon</div>
+      <div>Last Updated: <span id="last_modified"></span></div>
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/weather-api.js"></script>
+  <script src="scripts/weather-api-3day.js"></script>
+</body>
+</html>

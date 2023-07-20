@@ -1,0 +1,21 @@
+@media only screen and (min-width: 50em) {
+	p {
+		font-size: 1.5rem;
+		padding: 10px;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.5rem
+	}	
+	#weather-3day {
+		flex-direction: row;
+		margin: 5px auto;
+		width: 100%;
+	}
+
+	.forecast-day {
+		margin: 0 auto;
+	}
+}
