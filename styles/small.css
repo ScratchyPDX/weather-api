@@ -116,3 +116,39 @@ footer {
   padding: 0.3em;
   width: 150px;
 }
+
+input {
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  background-color: ghostwhite;
+  text-align: center;
+}
+
+button {
+  padding: .75rem 1.5rem;
+  margin: 10px auto;
+  font-size: 1rem;
+}
+
+/* removes number spinner from numeric fields */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
